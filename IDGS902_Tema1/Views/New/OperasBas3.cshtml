@@ -1,0 +1,32 @@
+﻿@model IDGS902_Tema1.Models.NewCalculos
+
+@{
+    ViewBag.Title = "OperasBas3";
+}
+
+<h2>OperasBas3</h2>
+
+
+<div class="container">
+    <div class="row">
+        <form action="/" method="post">
+            <label>X1:</label>
+            <input type="text" name="X1" value="" />
+            <br />
+            <label>Y1:</label>
+            <input type="text" name="Y1" value="" />
+            <br />
+            <label>X2:</label>
+            <input type="text" name="X2" value="" />
+            <br />
+            <label>Y2:</label>
+            <input type="text" name="Y2" value="" />
+            <br />
+            <input type="submit" name="name" value="Calcular" />
+        </form>
+
+    </div>
+    <div class="col-lg-6">
+        <h1>La distancia de esos puntos es: @Html.DisplayFor(model => model.Res)</h1>
+    </div>
+</div>
