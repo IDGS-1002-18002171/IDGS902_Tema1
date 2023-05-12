@@ -16,7 +16,7 @@ namespace IDGS902_Tema1
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Pruebas2", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "New", action = "MuestraPulques", id = UrlParameter.Optional }
             );
         }
     }

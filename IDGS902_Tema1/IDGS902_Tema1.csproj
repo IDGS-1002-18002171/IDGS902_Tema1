@@ -122,12 +122,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\NewController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Pruebas2Controller.cs" />
-    <Compile Include="Controllers\PruebasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Alumnos.cs" />
     <Compile Include="Models\NewCalculos.cs" />
     <Compile Include="Models\Calculos.cs" />
     <Compile Include="Models\Pulques.cs" />
@@ -191,18 +188,6 @@
     <Content Include="Views\New\OperasBas3.cshtml" />
     <Content Include="Views\New\MuestraPulques.cshtml" />
     <Content Include="Views\New\MuestraPulques2.cshtml" />
-    <Content Include="Views\Pruebas\Index.cshtml" />
-    <Content Include="Views\Pruebas\Index2.cshtml" />
-    <Content Include="Views\Pruebas\Index3.cshtml" />
-    <Content Include="Views\Pruebas\Index4.cshtml" />
-    <Content Include="Views\Pruebas2\DisplayTemplates\Boolean.cshtml" />
-    <Content Include="Views\Pruebas2\DisplayTemplates\DateTime.cshtml" />
-    <Content Include="Views\Pruebas2\Escuela.cshtml" />
-    <Content Include="Views\Pruebas2\EditorTemplates\DateTime.cshtml" />
-    <Content Include="Views\Pruebas2\TomarNumeros.cshtml" />
-    <Content Include="Views\Pruebas2\carcarCajas.cshtml" />
-    <Content Include="Views\Pruebas2\calculoFinal.cshtml" />
-    <Content Include="Views\Pruebas2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Services\" />
