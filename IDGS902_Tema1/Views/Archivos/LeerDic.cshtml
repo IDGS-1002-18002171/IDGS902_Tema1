@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "LeerDic";
+}
+
+<h2>LeerDic</h2>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Palabra en inglés</th>
+            <th>Palabra en español</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string item in ViewBag.Archivos)
+        {
+            <tr>
+                @foreach (string item2 in item.Split(','))
+                {
+                    <td>@item2</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

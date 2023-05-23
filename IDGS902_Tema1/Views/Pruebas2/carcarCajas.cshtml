@@ -8,7 +8,7 @@
     <input type="hidden" name="Numero1" value=@ViewBag.Cajas />
     @for (int i = 0; i < ViewBag.Cajas; i++)
     {
-        <label>Numero @i :</label>
+        <label>Numero @(i+1) :</label>
         <input type="text" name="Num"@i value="" />
         <br />
     }
