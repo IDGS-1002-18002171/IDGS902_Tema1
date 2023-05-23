@@ -1,0 +1,39 @@
+﻿@model IDGS902_Tema1.Models.Triangulo
+
+@{
+    ViewBag.Title = "Triangulos";
+}
+
+<h2>Triangulos</h2>
+
+
+<div class="container">
+    <div class="row">
+        <form action="/triangulos/Triangulos" method="post">
+            <label>Lado1X:</label>
+            <input type="text" name="Lado1X" value="" />
+            <br />
+            <label>Lado1Y:</label>
+            <input type="text" name="Lado1Y" value="" />
+            <br />
+            <label>Lado2X:</label>
+            <input type="text" name="Lado2X" value="" />
+            <br />
+            <label>Lado2Y:</label>
+            <input type="text" name="Lado2Y" value="" />
+            <br />
+            <label>Lado3X:</label>
+            <input type="text" name="Lado3X" value="" />
+            <br />
+            <label>Lado3Y:</label>
+            <input type="text" name="Lado3Y" value="" />
+            <br />
+            <input type="submit" name="name" value="Calcular" />
+        </form>
+
+    </div>
+    <div class="col-lg-6">
+        <h1>El area del triangulo es: @Html.DisplayFor(model => model.Res)</h1>
+        <h1>Es un triangulo: @ViewBag.Tipo</h1>
+    </div>
+</div>

@@ -121,10 +121,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ArchivosController.cs" />
+    <Compile Include="Controllers\DiccionarioController.cs" />
     <Compile Include="Controllers\NewController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Pruebas2Controller.cs" />
     <Compile Include="Controllers\PruebasController.cs" />
+    <Compile Include="Controllers\TriangulosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -134,6 +136,7 @@
     <Compile Include="Models\NewCalculos.cs" />
     <Compile Include="Models\Calculos.cs" />
     <Compile Include="Models\Pulques.cs" />
+    <Compile Include="Models\Triangulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GuardaService.cs" />
     <Compile Include="Services\LeerService.cs" />
@@ -212,9 +215,10 @@
     <Content Include="Views\Pruebas2\Index.cshtml" />
     <Content Include="Views\Archivos\Registrar.cshtml" />
     <Content Include="Views\Archivos\LeerDatos.cshtml" />
-    <Content Include="Views\Archivos\LeerDic.cshtml" />
-    <Content Include="Views\Archivos\RegistrarDic.cshtml" />
-    <Content Include="Views\Archivos\BuscarPalabra.cshtml" />
+    <Content Include="Views\Diccionario\LeerDic.cshtml" />
+    <Content Include="Views\Diccionario\RegistrarDic.cshtml" />
+    <Content Include="Views\Diccionario\BuscarPalabra.cshtml" />
+    <Content Include="Views\Triangulos\Triangulos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Services\" />

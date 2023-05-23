@@ -16,7 +16,7 @@ namespace IDGS902_Tema1
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Archivos", action = "RegistrarDic", id = UrlParameter.Optional }
+                defaults: new { controller = "Triangulos", action = "Triangulos", id = UrlParameter.Optional }
             );
         }
     }
