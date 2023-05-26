@@ -25,18 +25,22 @@ namespace IDGS902_Tema1.Models
             {
                 tipo = "Valores Nulos";
             }
-            else if (X1==Math.Round(X2)&&X1==Math.Round(Y1))
+            else if (Math.Abs(X1 - X2) <= 0.01 && Math.Abs(X1 - Y1) <= 0.01)
             {
                 tipo = "Equilátero";
-                semiperímetro = (X1 + X2+ Y1) /2.0;
+                semiperímetro = (X1 + X2 + Y1) / 2.0;
                 area = Math.Sqrt(semiperímetro * (semiperímetro - X1) * (semiperímetro - X2) * (semiperímetro - Y1));
-
             }
+
             else if (X1 == X2||X2==Y1||Y1==X1)
             {
                 tipo = "Isósceles";
                 semiperímetro = (X1 + X2 + Y1) /2.0;
                 area = Math.Sqrt(semiperímetro * (semiperímetro - X1) * (semiperímetro - X2) * (semiperímetro - Y1));
+                if (area == 0.0)
+                {
+                    tipo = "Triángulo inválido";
+                }
             }
             else if (X1 < (X2 + Y1) || X2 < (X1 + Y1) || Y1 < (X1 + X2))
             {
